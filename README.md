@@ -52,7 +52,7 @@ La página está organizada alrededor de contenido deportivo, promociones y prod
 
 ## Funcionalidades contempladas en el proyecto
 
-De acuerdo con los archivos incluidos, el proyecto contempla diferentes funciones para hacer la landing page interactiva:
+El proyecto contempla diferentes funciones para hacer la landing page interactiva:
 
 - Mostrar los productos y secciones principales de la tienda.
 - Navegar por el contenido de la landing page.
@@ -64,7 +64,7 @@ De acuerdo con los archivos incluidos, el proyecto contempla diferentes funcione
 ## Estructura principal del proyecto
 
 ```text
-hackaton1/
+
 ├── index.html
 ├── css/
 │   └── styles.css
@@ -88,11 +88,3 @@ hackaton1/
 - **js/cart.js:** lógica relacionada con el carrito de productos.
 - **js/newsletter.js:** lógica relacionada con la sección de newsletter.
 - **images/ e img/:** imágenes utilizadas en la página.
-
-## Puntos importantes del proyecto
-
-El desarrollo debe mantener como prioridad lo solicitado en las instrucciones: una página atractiva, intuitiva, funcional y adaptable a diferentes dispositivos.
-
-El HTML, CSS y JavaScript deben mantenerse organizados en sus archivos correspondientes. Las funciones del carrito, las animaciones y los elementos interactivos forman parte de la experiencia de la landing page y deben integrarse sin dificultar la navegación del usuario.
-
-El resultado final debe quedar publicado en el repositorio de GitHub para entregar su liga mediante Canvas.
