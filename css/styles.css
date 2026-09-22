@@ -962,6 +962,14 @@ a:hover {
         flex-direction: column;
     }
 
+    .hero-title-section,
+    .section-title-wrapper span,
+    .section-title-wrapper-mujer span,
+    .testimonios-header > span,
+    .newsletter-header > span {
+        font-size: xx-large;
+    }
+
     .hero-content,
     .hero-image-container {
         width: 100%;
