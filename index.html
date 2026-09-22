@@ -34,9 +34,9 @@
 
     <div class="nav-actions">
         <a class="icon-search" href="#" aria-label="Buscar">⌕</a>
-        <a class="icon-shopping-bag" href="#" aria-label="Carrito" style="position: relative; text-decoration: none; display: flex; align-items: center;">
-            <span style="font-size: 22px;" aria-hidden="true">🛒</span>
-            <span id="cart-count" style="position: absolute; top: -8px; right: -12px; font-size: 12px; background: #00FF88; color: #0F172A; border-radius: 50%; padding: 2px 6px; font-weight: bold; border: 2px solid #0F172A;">0</span>
+        <a class="icon-shopping-bag cart-icon-wrapper" href="#" aria-label="Carrito">
+            <span class="cart-emoji" aria-hidden="true">🛒</span>
+            <span id="cart-count" class="cart-badge">0</span>
         </a>
         <a class="nav-cta" href="#coleccion-hombre">Comprar ahora</a>
     </div>
@@ -71,7 +71,7 @@
         </div>
 
         <div class="hero-image-container">
-            <img src="./img/hero.jpg" alt="Hero Cyber Sport" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+            <img src="./img/hero.jpg" alt="Hero Cyber Sport" class="hero-img">
         </div>
     </section>
 
@@ -84,7 +84,7 @@
 
         <div class="categories-grid">
             <article class="category-card-running">
-                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" alt="Running" style="width:100%; height:100%; object-fit:cover;">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" alt="Running" class="category-img">
                 <div class="card-meta">
                     <h3>Running</h3>
                     <a href="#" aria-label="Ver Running">→</a>
@@ -92,7 +92,7 @@
             </article>
 
             <article class="category-card-training">
-                <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=600&q=80" alt="Training" style="width:100%; height:100%; object-fit:cover;">
+                <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=600&q=80" alt="Training" class="category-img">
                 <div class="card-meta">
                     <h3>Training</h3>
                     <a href="#" aria-label="Ver Training">→</a>
@@ -100,7 +100,7 @@
             </article>
 
             <article class="category-card-lifestyle">
-                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80" alt="Lifestyle" style="width:100%; height:100%; object-fit:cover;">
+                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80" alt="Lifestyle" class="category-img">
                 <div class="card-meta">
                     <h3>Lifestyle</h3>
                     <a href="#" aria-label="Ver Lifestyle">→</a>
@@ -108,7 +108,7 @@
             </article>
 
             <article class="category-card-accesorios">
-                <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=600&q=80" alt="Accessories" style="width:100%; height:100%; object-fit:cover;">
+                <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=600&q=80" alt="Accessories" class="category-img">
                 <div class="card-meta">
                     <h3>Accesorios</h3>
                     <a href="#" aria-label="Ver Accesorios">→</a>
@@ -126,7 +126,7 @@
 
         <div class="product-grid-hombre">
             <article class="product-hombre-0">
-                <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=500&q=80" alt="Camiseta" style="width:100%; height:250px; object-fit:cover; border-radius: 8px 8px 0 0;">
+                <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=500&q=80" alt="Camiseta" class="product-img">
                 <div class="product-info">
                     <h3>Camiseta Velocity Pro</h3>
                     <div class="price-action">
@@ -137,7 +137,7 @@
             </article>
 
             <article class="product-hombre-1">
-                <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=500&q=80" alt="Short" style="width:100%; height:250px; object-fit:cover; border-radius: 8px 8px 0 0;">
+                <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=500&q=80" alt="Short" class="product-img">
                 <div class="product-info">
                     <h3>Short Sprint X</h3>
                     <div class="price-action">
@@ -148,7 +148,7 @@
             </article>
 
             <article class="product-hombre-2">
-                <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=500&q=80" alt="Hoodie" style="width:100%; height:250px; object-fit:cover; border-radius: 8px 8px 0 0;">
+                <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=500&q=80" alt="Hoodie" class="product-img">
                 <div class="product-info">
                     <h3>Hoodie Urban Cat</h3>
                     <div class="price-action">
@@ -159,7 +159,7 @@
             </article>
 
             <article class="product-hombre-3">
-                <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=500&q=80" alt="Leggings" style="width:100%; height:250px; object-fit:cover; border-radius: 8px 8px 0 0;">
+                <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=500&q=80" alt="Leggings" class="product-img">
                 <div class="product-info">
                     <h3>Leggings Power Flex</h3>
                     <div class="price-action">
@@ -186,7 +186,7 @@
         </div>
 
         <div class="promo-placeholder">
-            <img src="./img/promo.jpg" alt="Promo Cyber" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+            <img src="./img/promo.jpg" alt="Promo Cyber" class="hero-img">
         </div>
     </section>
 
@@ -199,7 +199,7 @@
 
         <div class="product-grid-mujer">
             <article class="product-mujer-0">
-                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=500&q=80" alt="Top" style="width:100%; height:250px; object-fit:cover; border-radius: 8px 8px 0 0;">
+                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=500&q=80" alt="Top" class="product-img">
                 <div class="product-info">
                     <h3>Top Flex Fit</h3>
                     <div class="price-action">
@@ -210,7 +210,7 @@
             </article>
 
             <article class="product-mujer-1">
-                <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=500&q=80" alt="Leggings" style="width:100%; height:250px; object-fit:cover; border-radius: 8px 8px 0 0;">
+                <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=500&q=80" alt="Leggings" class="product-img">
                 <div class="product-info">
                     <h3>Leggings Sculpt Pro</h3>
                     <div class="price-action">
@@ -221,7 +221,7 @@
             </article>
 
             <article class="product-mujer-2">
-                <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=500&q=80" alt="Chaqueta" style="width:100%; height:250px; object-fit:cover; border-radius: 8px 8px 0 0;">
+                <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=500&q=80" alt="Chaqueta" class="product-img">
                 <div class="product-info">
                     <h3>Chaqueta Storm Shield</h3>
                     <div class="price-action">
@@ -232,7 +232,7 @@
             </article>
 
             <article class="product-mujer-3">
-                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=500&q=80" alt="Conjunto" style="width:100%; height:250px; object-fit:cover; border-radius: 8px 8px 0 0;">
+                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=500&q=80" alt="Conjunto" class="product-img">
                 <div class="product-info">
                     <h3>Conjunto Agility Set</h3>
                     <div class="price-action">
@@ -257,7 +257,7 @@
         <div class="novedades-carousel">
             <article class="nuevo-prod-0">
                 <span class="new-badge">Nuevo</span>
-                <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=500&q=80" alt="Rompevientos" style="width:100%; height:250px; object-fit:cover; border-radius: 8px 8px 0 0;">
+                <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=500&q=80" alt="Rompevientos" class="product-img">
                 <div class="info">
                     <h3>Rompevientos Stealth Track</h3>
                     <div class="meta">
@@ -269,7 +269,7 @@
 
             <article class="nuevo-prod-1">
                 <span class="new-badge">Nuevo</span>
-                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=500&q=80" alt="Maleta" style="width:100%; height:250px; object-fit:cover; border-radius: 8px 8px 0 0;">
+                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=500&q=80" alt="Maleta" class="product-img">
                 <div class="info">
                     <h3>Maleta Gear Storm 45L</h3>
                     <div class="meta">
@@ -281,7 +281,7 @@
 
             <article class="nuevo-prod-2">
                 <span class="new-badge">Nuevo</span>
-                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80" alt="Tenis" style="width:100%; height:250px; object-fit:cover; border-radius: 8px 8px 0 0;">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80" alt="Tenis" class="product-img">
                 <div class="info">
                     <h3>Tenis Apex Beast V1</h3>
                     <div class="meta">

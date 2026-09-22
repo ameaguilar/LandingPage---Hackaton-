@@ -9,7 +9,6 @@
 import { initShoppingCart } from './cart.js';
 import { initScrollAnimations, initSmoothScroll } from './animations.js';
 import { initNewsletter } from './newsletter.js';
-
 document.addEventListener("DOMContentLoaded", () => {
     // Inicializar submódulos
     initShoppingCart();
