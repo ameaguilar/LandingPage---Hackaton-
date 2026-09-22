@@ -3,71 +3,452 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuidado con el Gato | Sport Brand</title>
 
-    <meta
-        name="description"
-        content="Tienda deportiva con ropa, calzado y accesorios para llevar tu entrenamiento al siguiente nivel."
-    >
-
-    <title>Cuidado con el Gato | Ropa deportiva</title>
+    <!-- Tipografías del wireframe -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
 
-    <!-- 1. HEADER -->
-    <header class="header">
-        <!-- navegación -->
-    </header>
+<header class="navigation-bar">
+    <div class="logo-container">
+        <div class="logo-cropped-reference" aria-hidden="true"></div>
+        <div class="logo-text-group">
+            <span class="brand-name">CUIDADO CON EL GATO</span>
+            <span class="brand-type">SPORT BRAND</span>
+        </div>
+    </div>
 
+    <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#">Inicio</a>
+        <a href="#coleccion-hombre">Hombre</a>
+        <a href="#coleccion-mujer">Mujer</a>
+        <a href="#novedades">Novedades</a>
+        <a class="nav-offer" href="#promocion">Ofertas</a>
+    </nav>
 
-    <main>
+    <div class="nav-actions">
+        <a class="icon-search" href="#" aria-label="Buscar">⌕</a>
+        <a class="icon-shopping-bag" href="#" aria-label="Carrito">♧</a>
+        <a class="nav-cta" href="#coleccion-hombre">Comprar ahora</a>
+    </div>
+</header>
 
-        <!-- 2. HERO -->
-        <section class="hero" id="inicio">
-            <!-- propuesta principal -->
-        </section>
+<main>
 
+    <!-- HERO -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-eyebrow">
+                <span class="accent-line"></span>
+                <span>High performance wear</span>
+            </div>
 
-        <!-- 3. CATEGORÍAS -->
-        <section class="categories" id="categorias">
-            <!-- categorías de productos -->
-        </section>
+            <h1>Ropa deportiva que desafía tus límites</h1>
 
+            <p>
+                Rendimiento, estilo y actitud sin concesiones.
+                Diseñado para resistir las rutinas más exigentes
+                y conquistar la calle. Colección 2026.
+            </p>
 
-        <!-- 4. PRODUCTOS DESTACADOS -->
-        <section class="products" id="productos">
-            <!-- cards de productos -->
-        </section>
+            <div class="hero-actions">
+                <a class="hero-btn-men" href="#coleccion-hombre">
+                    Ver colección hombre
+                </a>
+                <a class="hero-btn-women" href="#coleccion-mujer">
+                    Ver colección mujer
+                </a>
+            </div>
+        </div>
 
+        <div class="hero-image-container">
+            <div class="placeholder-imagen-hero">[ Imagen Hero ]</div>
+        </div>
+    </section>
 
-        <!-- 5. PROMOCIÓN / BANNER -->
-        <section class="promotion">
-            <!-- oferta o campaña -->
-        </section>
+    <!-- CATEGORÍAS -->
+    <section class="categorias-destacadas">
+        <div class="categories-header">
+            <h2>Categorías destacadas</h2>
+            <a href="#">Explorar todo →</a>
+        </div>
 
+        <div class="categories-grid">
+            <article class="category-card-running">
+                <div class="placeholder-running-gear">[ Running Gear ]</div>
+                <div class="card-meta">
+                    <h3>Running</h3>
+                    <a href="#" aria-label="Ver Running">→</a>
+                </div>
+            </article>
 
-        <!-- 6. SERVICIOS / BENEFICIOS -->
-        <section class="services" id="servicios">
-            <!-- beneficios de comprar -->
-        </section>
+            <article class="category-card-training">
+                <div class="placeholder-training-focus">[ Training Focus ]</div>
+                <div class="card-meta">
+                    <h3>Training</h3>
+                    <a href="#" aria-label="Ver Training">→</a>
+                </div>
+            </article>
 
+            <article class="category-card-lifestyle">
+                <div class="placeholder-street-wear">[ Street Wear ]</div>
+                <div class="card-meta">
+                    <h3>Lifestyle</h3>
+                    <a href="#" aria-label="Ver Lifestyle">→</a>
+                </div>
+            </article>
 
-        <!-- 7. EXPERIENCIA / CTA -->
-        <section class="cta">
-            <!-- llamada a la acción -->
-        </section>
+            <article class="category-card-accesorios">
+                <div class="placeholder-accessories">[ Accessories ]</div>
+                <div class="card-meta">
+                    <h3>Accesorios</h3>
+                    <a href="#" aria-label="Ver Accesorios">→</a>
+                </div>
+            </article>
+        </div>
+    </section>
 
-    </main>
+    <!-- COLECCIÓN HOMBRE -->
+    <section class="coleccion-hombre" id="coleccion-hombre">
+        <div class="section-title-wrapper">
+            <span>Colección performance</span>
+            <h2>Para él</h2>
+        </div>
 
+        <div class="product-grid-hombre">
+            <article class="product-hombre-0">
+                <div class="placeholder-producto-hombre">[ Producto Hombre ]</div>
+                <div class="product-info">
+                    <h3>Camiseta Velocity Pro</h3>
+                    <div class="price-action">
+                        <strong>$599.00</strong>
+                        <a class="add-btn" href="#">Agregar</a>
+                    </div>
+                </div>
+            </article>
 
-    <!-- 8. FOOTER -->
-    <footer class="footer">
-        <!-- información y enlaces -->
-    </footer>
+            <article class="product-hombre-1">
+                <div class="placeholder-producto-hombre">[ Producto Hombre ]</div>
+                <div class="product-info">
+                    <h3>Short Sprint X</h3>
+                    <div class="price-action">
+                        <strong>$499.00</strong>
+                        <a class="add-btn" href="#">Agregar</a>
+                    </div>
+                </div>
+            </article>
 
+            <article class="product-hombre-2">
+                <div class="placeholder-producto-hombre">[ Producto Hombre ]</div>
+                <div class="product-info">
+                    <h3>Hoodie Urban Cat</h3>
+                    <div class="price-action">
+                        <strong>$899.00</strong>
+                        <a class="add-btn" href="#">Agregar</a>
+                    </div>
+                </div>
+            </article>
 
-    <script src="./js/main.js"></script>
+            <article class="product-hombre-3">
+                <div class="placeholder-producto-hombre">[ Producto Hombre ]</div>
+                <div class="product-info">
+                    <h3>Leggings Power Flex</h3>
+                    <div class="price-action">
+                        <strong>$699.00</strong>
+                        <a class="add-btn" href="#">Agregar</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- BANNER PROMOCIONAL -->
+    <section class="banner-promocional" id="promocion">
+        <div class="promo-content">
+            <span class="promo-tag">Oferta exclusiva</span>
+            <h2>30% OFF EN TU PRIMERA COMPRA</h2>
+
+            <div class="code-group">
+                <span>Usa el código</span>
+                <strong class="code-badge">GATO30</strong>
+            </div>
+
+            <a class="apply-btn" href="#">Aplicar descuento</a>
+        </div>
+
+        <div class="promo-placeholder">
+            <div class="placeholder-banner-promo">[ Banner Promo ]</div>
+        </div>
+    </section>
+
+    <!-- COLECCIÓN MUJER -->
+    <section class="coleccion-mujer" id="coleccion-mujer">
+        <div class="section-title-wrapper-mujer">
+            <span>Estilo y resistencia</span>
+            <h2>Para ella</h2>
+        </div>
+
+        <div class="product-grid-mujer">
+            <article class="product-mujer-0">
+                <div class="placeholder-producto-mujer">[ Producto Mujer ]</div>
+                <div class="product-info">
+                    <h3>Top Flex Fit</h3>
+                    <div class="price-action">
+                        <strong>$449.00</strong>
+                        <a class="add-btn-mujer" href="#">Agregar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-mujer-1">
+                <div class="placeholder-producto-mujer">[ Producto Mujer ]</div>
+                <div class="product-info">
+                    <h3>Leggings Sculpt Pro</h3>
+                    <div class="price-action">
+                        <strong>$649.00</strong>
+                        <a class="add-btn-mujer" href="#">Agregar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-mujer-2">
+                <div class="placeholder-producto-mujer">[ Producto Mujer ]</div>
+                <div class="product-info">
+                    <h3>Chaqueta Storm Shield</h3>
+                    <div class="price-action">
+                        <strong>$999.00</strong>
+                        <a class="add-btn-mujer" href="#">Agregar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-mujer-3">
+                <div class="placeholder-producto-mujer">[ Producto Mujer ]</div>
+                <div class="product-info">
+                    <h3>Conjunto Agility Set</h3>
+                    <div class="price-action">
+                        <strong>$1,199.00</strong>
+                        <a class="add-btn-mujer" href="#">Agregar</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- NOVEDADES -->
+    <section class="novedades-section" id="novedades">
+        <div class="novedades-header">
+            <h2>Lo nuevo</h2>
+            <div class="carousel-indicator">
+                <button aria-label="Anterior">‹</button>
+                <button aria-label="Siguiente">›</button>
+            </div>
+        </div>
+
+        <div class="novedades-carousel">
+            <article class="nuevo-prod-0">
+                <span class="new-badge">Nuevo</span>
+                <div class="placeholder-nuevo-producto">[ Nuevo Producto ]</div>
+                <div class="info">
+                    <h3>Rompevientos Stealth Track</h3>
+                    <div class="meta">
+                        <strong>$1,299.00</strong>
+                        <a href="#" aria-label="Agregar">+</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="nuevo-prod-1">
+                <span class="new-badge">Nuevo</span>
+                <div class="placeholder-nuevo-producto">[ Nuevo Producto ]</div>
+                <div class="info">
+                    <h3>Maleta Gear Storm 45L</h3>
+                    <div class="meta">
+                        <strong>$899.00</strong>
+                        <a href="#" aria-label="Agregar">+</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="nuevo-prod-2">
+                <span class="new-badge">Nuevo</span>
+                <div class="placeholder-nuevo-producto">[ Nuevo Producto ]</div>
+                <div class="info">
+                    <h3>Tenis Apex Beast V1</h3>
+                    <div class="meta">
+                        <strong>$1,899.00</strong>
+                        <a href="#" aria-label="Agregar">+</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonios-section">
+        <div class="testimonios-header">
+            <span>Comunidad sport</span>
+            <h2>La manada opina</h2>
+        </div>
+
+        <div class="testimonials-grid">
+            <article class="testimonial-card-0">
+                <div class="stars">★★★★★</div>
+                <p>"La comodidad de los shorts de entrenamiento es de otro planeta. Aguantan las sesiones más pesadas de sentadilla sin problema alguno."</p>
+                <div class="user-profile">
+                    <div class="avatar-placeholder">J</div>
+                    <div class="profile-meta">
+                        <strong>Juan Pérez</strong>
+                        <small>Cliente verificado</small>
+                    </div>
+                </div>
+            </article>
+
+            <article class="testimonial-card-1">
+                <div class="stars">★★★★★</div>
+                <p>"El conjunto Agility Set queda perfecto y mantiene la frescura en todo momento. Totalmente recomendado para correr de noche."</p>
+                <div class="user-profile">
+                    <div class="avatar-placeholder">A</div>
+                    <div class="profile-meta">
+                        <strong>Ana López</strong>
+                        <small>Cliente verificado</small>
+                    </div>
+                </div>
+            </article>
+
+            <article class="testimonial-card-2">
+                <div class="stars">★★★★★</div>
+                <p>"Hacía deporte porque todos tienen que hacerlo y ahora adoro la marca. Los materiales premium se notan desde el primer uso."</p>
+                <div class="user-profile">
+                    <div class="avatar-placeholder">M</div>
+                    <div class="profile-meta">
+                        <strong>Marco Ruiz</strong>
+                        <small>Cliente verificado</small>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- CARACTERÍSTICAS DE MARCA -->
+    <section class="caracteristicas-marca">
+        <article class="feature-0">
+            <div class="feat-icon-wrapper">✦</div>
+            <div class="feat-text">
+                <h3>Envío gratis</h3>
+                <p>En compras superiores a $999</p>
+            </div>
+        </article>
+
+        <article class="feature-1">
+            <div class="feat-icon-wrapper">↻</div>
+            <div class="feat-text">
+                <h3>Devolución 30 días</h3>
+                <p>Compra con confianza</p>
+            </div>
+        </article>
+
+        <article class="feature-2">
+            <div class="feat-icon-wrapper">◉</div>
+            <div class="feat-text">
+                <h3>Pago seguro</h3>
+                <p>Tus datos están protegidos</p>
+            </div>
+        </article>
+
+        <article class="feature-3">
+            <div class="feat-icon-wrapper">★</div>
+            <div class="feat-text">
+                <h3>Calidad premium</h3>
+                <p>Diseñado para durar</p>
+            </div>
+        </article>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter-section">
+        <div class="newsletter-header">
+            <span>Comunidad</span>
+            <h2>Únete a la manada</h2>
+            <p>Recibe ofertas exclusivas, nuevos productos y contenido directo en tu correo.</p>
+        </div>
+
+        <form class="input-container">
+            <div class="email-input-wrapper">
+                <label for="email">Correo electrónico</label>
+                <input id="email" type="email" placeholder="Tu correo electrónico..." required>
+            </div>
+            <button class="subscribe-btn" type="submit">Suscribirse</button>
+        </form>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-cols">
+
+        <div class="footer-brand">
+            <div class="logo-container-footer">
+                <div class="logo-cropped-footer" aria-hidden="true"></div>
+                <div class="logo-text-group-footer">
+                    <span>CUIDADO CON EL GATO</span>
+                    <small>SPORT BRAND</small>
+                </div>
+            </div>
+            <p>Ropa y accesorios de alta calidad para atletas que no conocen los límites. Estilo urbano para dominar tu entrenamiento diario.</p>
+        </div>
+
+        <div class="footer-col-0">
+            <h3>Tienda</h3>
+            <div class="col-links">
+                <a href="#coleccion-hombre">Hombre</a>
+                <a href="#coleccion-mujer">Mujer</a>
+                <a href="#">Calzado</a>
+                <a href="#">Accesorios</a>
+                <a href="#novedades">Novedades</a>
+            </div>
+        </div>
+
+        <div class="footer-col-1">
+            <h3>Soporte</h3>
+            <div class="col-links">
+                <a href="#">Ayuda</a>
+                <a href="#">Envíos</a>
+                <a href="#">Devoluciones</a>
+                <a href="#">Contacto</a>
+                <a href="#">Preguntas frecuentes</a>
+            </div>
+        </div>
+
+        <div class="footer-col-2">
+            <h3>Legal</h3>
+            <div class="col-links">
+                <a href="#">Términos de servicio</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Cookies</a>
+                <a href="#">Aviso legal</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Cuidado con el Gato. Todos los derechos reservados.</p>
+
+        <div class="socials">
+            <a class="social-icon-facebook" href="#" aria-label="Facebook">f</a>
+            <a class="social-icon-instagram" href="#" aria-label="Instagram">ig</a>
+            <a class="social-icon-twitter" href="#" aria-label="Twitter">t</a>
+            <a class="social-icon-youtube" href="#" aria-label="YouTube">▶</a>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
