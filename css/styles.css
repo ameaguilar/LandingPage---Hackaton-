@@ -70,9 +70,16 @@ button {
 
 .logo-cropped-reference,
 .logo-cropped-footer {
-    width: 72px;
-    height: 54px;
-    background: var(--slate);
+    width: 100px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.logo-cropped-footer {
+    width: 60px;
+    height: 45px;
+    object-fit: contain;
     border-radius: 4px;
 }
 
@@ -194,7 +201,7 @@ button {
     color: var(--white);
 }
 
-.hero-content > p {
+.hero-content>p {
     max-width: 656px;
     font-size: 20px;
     line-height: 28px;
@@ -231,16 +238,15 @@ button {
     width: 50%;
 }
 
-.placeholder-imagen-hero {
-    min-height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--slate);
+.hero-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    /* Recorta y ajusta la imagen para que llene el contenedor sin deformarse */
     border: 1px solid var(--green);
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    border-radius: 8px;
+    /* Borde suave similar al resto del diseño */
+    display: block;
 }
 
 /* =========================================================
@@ -277,7 +283,7 @@ button {
     color: var(--white);
 }
 
-.categories-header > a {
+.categories-header>a {
     color: var(--green);
     font-weight: 700;
     text-transform: uppercase;
@@ -300,19 +306,19 @@ button {
     border-radius: 8px;
 }
 
-.placeholder-running-gear,
-.placeholder-training-focus,
-.placeholder-street-wear,
-.placeholder-accessories {
+.category-img {
+    width: 100%;
     height: 280px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    object-fit: cover;
     border: 1px solid var(--border);
-    color: var(--muted);
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 1px;
+    border-radius: 4px;
+    display: block;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+[class*="category-card-"]:hover .category-img {
+    transform: scale(1.03);
+    border-color: var(--green);
 }
 
 .card-meta {
@@ -384,18 +390,27 @@ button {
     gap: 24px;
 }
 
-.product-hombre-0,
-.product-hombre-1,
-.product-hombre-2,
-.product-hombre-3,
-.product-mujer-0,
-.product-mujer-1,
-.product-mujer-2,
-.product-mujer-3 {
-    padding: 16px;
-    background: var(--light);
-    border: 1px solid #E2E8F0;
-    border-radius: 8px;
+.product-img-hombre,
+.product-img-mujer {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.product-img-hombre {
+    border: 1px solid var(--green);
+}
+
+.product-img-mujer {
+    border: 1px solid var(--pink);
+}
+
+[class*="product-hombre-"]:hover .product-img-hombre,
+[class*="product-mujer-"]:hover .product-img-mujer {
+    transform: scale(1.03);
 }
 
 .placeholder-producto-hombre,
@@ -475,7 +490,7 @@ button {
 
 .promo-tag {
     color: var(--pink);
-    font-size: 14px;
+    font-size: 80px;
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -502,6 +517,7 @@ button {
     padding: 4px 10px;
     border: 1px solid var(--green);
     color: var(--green);
+    font-size: xx-large;
 }
 
 .apply-btn {
@@ -519,15 +535,17 @@ button {
     width: 480px;
 }
 
-.placeholder-banner-promo {
-    height: 320px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--slate);
-    border: 1px solid var(--border);
-    color: var(--muted);
-    text-transform: uppercase;
+.banner-promo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.promo-banner-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
 }
 
 /* =========================================================
@@ -576,13 +594,21 @@ button {
     text-transform: uppercase;
 }
 
-.placeholder-nuevo-producto {
+.product-img-novedad {
+    width: 100%;
     height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    object-fit: cover;
     border: 1px solid var(--border);
-    color: var(--muted);
+    border-radius: 6px;
+    display: block;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.nuevo-prod-0:hover .product-img-novedad,
+.nuevo-prod-1:hover .product-img-novedad,
+.nuevo-prod-2:hover .product-img-novedad {
+    transform: scale(1.02);
+    border-color: var(--green);
 }
 
 .nuevo-prod-0 .info,
@@ -618,7 +644,7 @@ button {
     margin-bottom: 48px;
 }
 
-.testimonios-header > span {
+.testimonios-header>span {
     color: var(--pink);
     font-size: 14px;
     font-weight: 700;
@@ -731,7 +757,7 @@ button {
     text-align: center;
 }
 
-.newsletter-header > span {
+.newsletter-header>span {
     font-weight: 700;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -829,7 +855,7 @@ button {
     letter-spacing: 2px;
 }
 
-.footer-brand > p {
+.footer-brand>p {
     color: var(--muted);
     line-height: 1.5;
 }
@@ -906,6 +932,7 @@ a:hover {
    ========================================================= */
 
 @media (max-width: 1100px) {
+
     .navigation-bar,
     .hero-section,
     .categorias-destacadas,
@@ -1008,293 +1035,4 @@ a:hover {
         gap: 20px;
         align-items: flex-start;
     }
-    }
-}
-
-/* --------------------------------------------------------------------------
-   7. ANIMACIONES Y TOASTS (Inyectado)
-   -------------------------------------------------------------------------- */
-.reveal {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 0.8s ease-out;
-}
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.toast-container-vanilla {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9999;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.vanilla-toast {
-    background: #0F172A;
-    color: #FFF;
-    border-left: 5px solid #00FF88;
-    padding: 16px 20px;
-    border-radius: 4px;
-    box-shadow: 0 4px 12px rgba(0,255,136,0.2);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    opacity: 0;
-    transform: translateX(100%);
-    transition: all 0.4s ease-out;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 16px;
-}
-.vanilla-toast.show {
-    opacity: 1;
-    transform: translateX(0);
-}
-    font-size: 14px;
-}
-
-.footer-bottom {
-    padding-top: 24px;
-    border-top: 1px solid var(--border);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--muted);
-    font-size: 13px;
-}
-
-.socials {
-    display: flex;
-    gap: 12px;
-}
-
-.socials a {
-    color: var(--white);
-}
-
-/* =========================================================
-   HOVER
-   ========================================================= */
-
-a,
-button {
-    transition: .2s ease;
-}
-
-a:hover {
-    opacity: .8;
-}
-
-.nav-cta:hover,
-.hero-btn-men:hover,
-.apply-btn:hover,
-.subscribe-btn:hover {
-    transform: translateY(-2px);
-    opacity: 1;
-}
-
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
-
-@media (max-width: 1100px) {
-    .navigation-bar,
-    .hero-section,
-    .categorias-destacadas,
-    .coleccion-hombre,
-    .banner-promocional,
-    .coleccion-mujer,
-    .novedades-section,
-    .testimonios-section,
-    .caracteristicas-marca,
-    .newsletter-section,
-    .footer {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
-    .nav-links {
-        gap: 16px;
-    }
-
-    .categories-grid,
-    .product-grid-hombre,
-    .product-grid-mujer {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .hero-section {
-        flex-direction: column;
-    }
-
-    .hero-content,
-    .hero-image-container {
-        width: 100%;
-    }
-}
-
-@media (max-width: 700px) {
-    .navigation-bar {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .nav-links {
-        order: 3;
-        width: 100%;
-        overflow-x: auto;
-    }
-
-    .nav-actions {
-        margin-left: auto;
-    }
-
-    .nav-cta {
-        display: none;
-    }
-
-    .hero-section {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    .hero-content h1 {
-        font-size: 46px;
-    }
-
-    .hero-actions {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .hero-btn-men,
-    .hero-btn-women {
-        width: 100%;
-        text-align: center;
-    }
-
-    .categories-grid,
-    .product-grid-hombre,
-    .product-grid-mujer,
-    .novedades-carousel,
-    .testimonials-grid,
-    .caracteristicas-marca,
-    .footer-cols {
-        grid-template-columns: 1fr;
-    }
-
-    .banner-promocional {
-        flex-direction: column;
-    }
-
-    .promo-placeholder {
-        width: 100%;
-    }
-
-    .input-container {
-        flex-direction: column;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        gap: 20px;
-        align-items: flex-start;
-    }
-    }
-}
-
-/* --------------------------------------------------------------------------
-   7. ANIMACIONES Y TOASTS (Inyectado)
-   -------------------------------------------------------------------------- */
-.reveal {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 0.8s ease-out;
-}
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.toast-container-vanilla {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9999;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.vanilla-toast {
-    background: #0F172A;
-    color: #FFF;
-    border-left: 5px solid #00FF88;
-    padding: 16px 20px;
-    border-radius: 4px;
-    box-shadow: 0 4px 12px rgba(0,255,136,0.2);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    opacity: 0;
-    transform: translateX(100%);
-    transition: all 0.4s ease-out;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 16px;
-}
-.vanilla-toast.show {
-    opacity: 1;
-    transform: translateX(0);
-}
-.vanilla-toast-close {
-    background: none;
-    border: none;
-    color: #FFF;
-    font-size: 24px;
-    cursor: pointer;
-    margin-left: 15px;
-}
-
-/* --------------------------------------------------------------------------
-   8. AJUSTES DINÁMICOS E IMÁGENES
-   -------------------------------------------------------------------------- */
-.cart-icon-wrapper {
-    position: relative;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-.cart-emoji {
-    font-size: 22px;
-}
-.cart-badge {
-    position: absolute;
-    top: -8px;
-    right: -12px;
-    font-size: 12px;
-    background: #00FF88;
-    color: #0F172A;
-    border-radius: 50%;
-    padding: 2px 6px;
-    font-weight: bold;
-    border: 2px solid #0F172A;
-}
-.hero-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 12px;
-}
-.category-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.product-img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px 8px 0 0;
 }

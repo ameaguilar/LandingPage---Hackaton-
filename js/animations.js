@@ -1,10 +1,16 @@
 /**
- * Módulo de Animaciones
- * Maneja efectos visuales basados en scroll mediante IntersectionObserver
+ * Módulo de Animaciones.
+ * Implementa animaciones al hacer scroll usando IntersectionObserver (fade-in y translate)
+ * y desplazamiento suave (smooth scroll) para los enlaces internos.
  */
-
 export const initScrollAnimations = () => {
-    const revealElements = document.querySelectorAll('.reveal');
+    const revealElements = document.querySelectorAll('article, .hero-content, .promo-content, .section-title-wrapper, .section-title-wrapper-mujer, .novedades-header, .testimonios-header');
+    
+    revealElements.forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+    });
     
     const observerOptions = {
         root: null,
@@ -15,7 +21,8 @@ export const initScrollAnimations = () => {
     const revealObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('active');
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
                 observer.unobserve(entry.target); 
             }
         });
@@ -30,17 +37,14 @@ export const initSmoothScroll = () => {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             
-            // Si el href es solo "#", scrollear hasta arriba
             if (targetId === '#') {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
                 return;
             }
             
-            // Buscar el elemento por ID
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
-                // Ajustar el offset por la altura del navbar flotante
-                const headerOffset = document.querySelector('header')?.offsetHeight || 80;
+                const headerOffset = document.querySelector('header.navigation-bar')?.offsetHeight || 86;
                 const elementPosition = targetElement.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.scrollY - headerOffset;
 
