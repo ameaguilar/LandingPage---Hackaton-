@@ -70,9 +70,16 @@ button {
 
 .logo-cropped-reference,
 .logo-cropped-footer {
-    width: 72px;
-    height: 54px;
-    background: var(--slate);
+    width: 100px;
+    height: 80px;
+    object-fit: contain; 
+    border-radius: 4px;
+}
+
+.logo-cropped-footer {
+    width: 60px;
+    height: 45px;
+    object-fit: contain;
     border-radius: 4px;
 }
 
@@ -231,16 +238,13 @@ button {
     width: 50%;
 }
 
-.placeholder-imagen-hero {
-    min-height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--slate);
+.hero-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; /* Recorta y ajusta la imagen para que llene el contenedor sin deformarse */
     border: 1px solid var(--green);
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    border-radius: 8px; /* Borde suave similar al resto del diseño */
+    display: block;
 }
 
 /* =========================================================
@@ -300,19 +304,13 @@ button {
     border-radius: 8px;
 }
 
-.placeholder-running-gear,
-.placeholder-training-focus,
-.placeholder-street-wear,
-.placeholder-accessories {
+.category-img {
+    width: 100%;
     height: 280px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    object-fit: cover; 
     border: 1px solid var(--border);
-    color: var(--muted);
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 1px;
+    border-radius: 4px;
+    display: block;
 }
 
 .card-meta {
@@ -384,18 +382,27 @@ button {
     gap: 24px;
 }
 
-.product-hombre-0,
-.product-hombre-1,
-.product-hombre-2,
-.product-hombre-3,
-.product-mujer-0,
-.product-mujer-1,
-.product-mujer-2,
-.product-mujer-3 {
-    padding: 16px;
-    background: var(--light);
-    border: 1px solid #E2E8F0;
-    border-radius: 8px;
+.product-img-hombre,
+.product-img-mujer {
+    width: 100%;
+    height: 320px;
+    object-fit: cover; 
+    border-radius: 6px;
+    display: block;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.product-img-hombre {
+    border: 1px solid var(--green);
+}
+
+.product-img-mujer {
+    border: 1px solid var(--pink);
+}
+
+[class*="product-hombre-"]:hover .product-img-hombre,
+[class*="product-mujer-"]:hover .product-img-mujer {
+    transform: scale(1.03);
 }
 
 .placeholder-producto-hombre,
@@ -519,15 +526,17 @@ button {
     width: 480px;
 }
 
-.placeholder-banner-promo {
-    height: 320px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--slate);
-    border: 1px solid var(--border);
-    color: var(--muted);
-    text-transform: uppercase;
+.banner-promo {
+    position: relative; 
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.promo-banner-img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+    display: block;
 }
 
 /* =========================================================
@@ -576,13 +585,21 @@ button {
     text-transform: uppercase;
 }
 
-.placeholder-nuevo-producto {
+.product-img-novedad {
+    width: 100%;
     height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    object-fit: cover;
     border: 1px solid var(--border);
-    color: var(--muted);
+    border-radius: 6px;
+    display: block;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.nuevo-prod-0:hover .product-img-novedad,
+.nuevo-prod-1:hover .product-img-novedad,
+.nuevo-prod-2:hover .product-img-novedad {
+    transform: scale(1.02);
+    border-color: var(--green);
 }
 
 .nuevo-prod-0 .info,
