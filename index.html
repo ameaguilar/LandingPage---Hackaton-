@@ -17,7 +17,7 @@
 
 <header class="navigation-bar">
     <div class="logo-container">
-        <div class="logo-cropped-reference" aria-hidden="true"></div>
+        <img src="./img/logo.png" width="40" height="40" alt="Logo">
         <div class="logo-text-group">
             <span class="brand-name">CUIDADO CON EL GATO</span>
             <span class="brand-type">SPORT BRAND</span>
@@ -34,7 +34,10 @@
 
     <div class="nav-actions">
         <a class="icon-search" href="#" aria-label="Buscar">⌕</a>
-        <a class="icon-shopping-bag" href="#" aria-label="Carrito">♧</a>
+        <a class="icon-shopping-bag" href="#" aria-label="Carrito" style="position: relative; text-decoration: none; display: flex; align-items: center;">
+            <span style="font-size: 22px;" aria-hidden="true">🛒</span>
+            <span id="cart-count" style="position: absolute; top: -8px; right: -12px; font-size: 12px; background: #00FF88; color: #0F172A; border-radius: 50%; padding: 2px 6px; font-weight: bold; border: 2px solid #0F172A;">0</span>
+        </a>
         <a class="nav-cta" href="#coleccion-hombre">Comprar ahora</a>
     </div>
 </header>
@@ -42,7 +45,7 @@
 <main>
 
     <!-- HERO -->
-    <section class="hero-section">
+    <section class="hero-section reveal">
         <div class="hero-content">
             <div class="hero-eyebrow">
                 <span class="accent-line"></span>
@@ -68,12 +71,12 @@
         </div>
 
         <div class="hero-image-container">
-            <div class="placeholder-imagen-hero">[ Imagen Hero ]</div>
+            <img src="./img/hero.jpg" alt="Hero Cyber Sport" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
         </div>
     </section>
 
     <!-- CATEGORÍAS -->
-    <section class="categorias-destacadas">
+    <section class="categorias-destacadas reveal">
         <div class="categories-header">
             <h2>Categorías destacadas</h2>
             <a href="#">Explorar todo →</a>
@@ -81,7 +84,7 @@
 
         <div class="categories-grid">
             <article class="category-card-running">
-                <div class="placeholder-running-gear">[ Running Gear ]</div>
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" alt="Running" style="width:100%; height:100%; object-fit:cover;">
                 <div class="card-meta">
                     <h3>Running</h3>
                     <a href="#" aria-label="Ver Running">→</a>
@@ -89,7 +92,7 @@
             </article>
 
             <article class="category-card-training">
-                <div class="placeholder-training-focus">[ Training Focus ]</div>
+                <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=600&q=80" alt="Training" style="width:100%; height:100%; object-fit:cover;">
                 <div class="card-meta">
                     <h3>Training</h3>
                     <a href="#" aria-label="Ver Training">→</a>
@@ -97,7 +100,7 @@
             </article>
 
             <article class="category-card-lifestyle">
-                <div class="placeholder-street-wear">[ Street Wear ]</div>
+                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80" alt="Lifestyle" style="width:100%; height:100%; object-fit:cover;">
                 <div class="card-meta">
                     <h3>Lifestyle</h3>
                     <a href="#" aria-label="Ver Lifestyle">→</a>
@@ -105,7 +108,7 @@
             </article>
 
             <article class="category-card-accesorios">
-                <div class="placeholder-accessories">[ Accessories ]</div>
+                <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=600&q=80" alt="Accessories" style="width:100%; height:100%; object-fit:cover;">
                 <div class="card-meta">
                     <h3>Accesorios</h3>
                     <a href="#" aria-label="Ver Accesorios">→</a>
@@ -115,7 +118,7 @@
     </section>
 
     <!-- COLECCIÓN HOMBRE -->
-    <section class="coleccion-hombre" id="coleccion-hombre">
+    <section class="coleccion-hombre reveal" id="coleccion-hombre">
         <div class="section-title-wrapper">
             <span>Colección performance</span>
             <h2>Para él</h2>
@@ -123,45 +126,45 @@
 
         <div class="product-grid-hombre">
             <article class="product-hombre-0">
-                <div class="placeholder-producto-hombre">[ Producto Hombre ]</div>
+                <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=500&q=80" alt="Camiseta" style="width:100%; height:250px; object-fit:cover; border-radius: 8px 8px 0 0;">
                 <div class="product-info">
                     <h3>Camiseta Velocity Pro</h3>
                     <div class="price-action">
                         <strong>$599.00</strong>
-                        <a class="add-btn" href="#">Agregar</a>
+                        <a class="add-btn add-to-cart" href="#" data-product="Camiseta Velocity Pro">Agregar</a>
                     </div>
                 </div>
             </article>
 
             <article class="product-hombre-1">
-                <div class="placeholder-producto-hombre">[ Producto Hombre ]</div>
+                <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=500&q=80" alt="Short" style="width:100%; height:250px; object-fit:cover; border-radius: 8px 8px 0 0;">
                 <div class="product-info">
                     <h3>Short Sprint X</h3>
                     <div class="price-action">
                         <strong>$499.00</strong>
-                        <a class="add-btn" href="#">Agregar</a>
+                        <a class="add-btn add-to-cart" href="#" data-product="Short Sprint X">Agregar</a>
                     </div>
                 </div>
             </article>
 
             <article class="product-hombre-2">
-                <div class="placeholder-producto-hombre">[ Producto Hombre ]</div>
+                <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=500&q=80" alt="Hoodie" style="width:100%; height:250px; object-fit:cover; border-radius: 8px 8px 0 0;">
                 <div class="product-info">
                     <h3>Hoodie Urban Cat</h3>
                     <div class="price-action">
                         <strong>$899.00</strong>
-                        <a class="add-btn" href="#">Agregar</a>
+                        <a class="add-btn add-to-cart" href="#" data-product="Hoodie Urban Cat">Agregar</a>
                     </div>
                 </div>
             </article>
 
             <article class="product-hombre-3">
-                <div class="placeholder-producto-hombre">[ Producto Hombre ]</div>
+                <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=500&q=80" alt="Leggings" style="width:100%; height:250px; object-fit:cover; border-radius: 8px 8px 0 0;">
                 <div class="product-info">
                     <h3>Leggings Power Flex</h3>
                     <div class="price-action">
                         <strong>$699.00</strong>
-                        <a class="add-btn" href="#">Agregar</a>
+                        <a class="add-btn add-to-cart" href="#" data-product="Leggings Power Flex">Agregar</a>
                     </div>
                 </div>
             </article>
@@ -169,7 +172,7 @@
     </section>
 
     <!-- BANNER PROMOCIONAL -->
-    <section class="banner-promocional" id="promocion">
+    <section class="banner-promocional reveal" id="promocion">
         <div class="promo-content">
             <span class="promo-tag">Oferta exclusiva</span>
             <h2>30% OFF EN TU PRIMERA COMPRA</h2>
@@ -183,12 +186,12 @@
         </div>
 
         <div class="promo-placeholder">
-            <div class="placeholder-banner-promo">[ Banner Promo ]</div>
+            <img src="./img/promo.jpg" alt="Promo Cyber" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
         </div>
     </section>
 
     <!-- COLECCIÓN MUJER -->
-    <section class="coleccion-mujer" id="coleccion-mujer">
+    <section class="coleccion-mujer reveal" id="coleccion-mujer">
         <div class="section-title-wrapper-mujer">
             <span>Estilo y resistencia</span>
             <h2>Para ella</h2>
@@ -196,45 +199,45 @@
 
         <div class="product-grid-mujer">
             <article class="product-mujer-0">
-                <div class="placeholder-producto-mujer">[ Producto Mujer ]</div>
+                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=500&q=80" alt="Top" style="width:100%; height:250px; object-fit:cover; border-radius: 8px 8px 0 0;">
                 <div class="product-info">
                     <h3>Top Flex Fit</h3>
                     <div class="price-action">
                         <strong>$449.00</strong>
-                        <a class="add-btn-mujer" href="#">Agregar</a>
+                        <a class="add-btn-mujer add-to-cart" href="#" data-product="Top Flex Fit">Agregar</a>
                     </div>
                 </div>
             </article>
 
             <article class="product-mujer-1">
-                <div class="placeholder-producto-mujer">[ Producto Mujer ]</div>
+                <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=500&q=80" alt="Leggings" style="width:100%; height:250px; object-fit:cover; border-radius: 8px 8px 0 0;">
                 <div class="product-info">
                     <h3>Leggings Sculpt Pro</h3>
                     <div class="price-action">
                         <strong>$649.00</strong>
-                        <a class="add-btn-mujer" href="#">Agregar</a>
+                        <a class="add-btn-mujer add-to-cart" href="#" data-product="Leggings Sculpt Pro">Agregar</a>
                     </div>
                 </div>
             </article>
 
             <article class="product-mujer-2">
-                <div class="placeholder-producto-mujer">[ Producto Mujer ]</div>
+                <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=500&q=80" alt="Chaqueta" style="width:100%; height:250px; object-fit:cover; border-radius: 8px 8px 0 0;">
                 <div class="product-info">
                     <h3>Chaqueta Storm Shield</h3>
                     <div class="price-action">
                         <strong>$999.00</strong>
-                        <a class="add-btn-mujer" href="#">Agregar</a>
+                        <a class="add-btn-mujer add-to-cart" href="#" data-product="Chaqueta Storm Shield">Agregar</a>
                     </div>
                 </div>
             </article>
 
             <article class="product-mujer-3">
-                <div class="placeholder-producto-mujer">[ Producto Mujer ]</div>
+                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=500&q=80" alt="Conjunto" style="width:100%; height:250px; object-fit:cover; border-radius: 8px 8px 0 0;">
                 <div class="product-info">
                     <h3>Conjunto Agility Set</h3>
                     <div class="price-action">
                         <strong>$1,199.00</strong>
-                        <a class="add-btn-mujer" href="#">Agregar</a>
+                        <a class="add-btn-mujer add-to-cart" href="#" data-product="Conjunto Agility Set">Agregar</a>
                     </div>
                 </div>
             </article>
@@ -242,48 +245,48 @@
     </section>
 
     <!-- NOVEDADES -->
-    <section class="novedades-section" id="novedades">
+    <section class="novedades-section reveal" id="novedades">
         <div class="novedades-header">
             <h2>Lo nuevo</h2>
             <div class="carousel-indicator">
-                <button aria-label="Anterior">‹</button>
-                <button aria-label="Siguiente">›</button>
+                <button type="button" aria-label="Anterior">‹</button>
+                <button type="button" aria-label="Siguiente">›</button>
             </div>
         </div>
 
         <div class="novedades-carousel">
             <article class="nuevo-prod-0">
                 <span class="new-badge">Nuevo</span>
-                <div class="placeholder-nuevo-producto">[ Nuevo Producto ]</div>
+                <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=500&q=80" alt="Rompevientos" style="width:100%; height:250px; object-fit:cover; border-radius: 8px 8px 0 0;">
                 <div class="info">
                     <h3>Rompevientos Stealth Track</h3>
                     <div class="meta">
                         <strong>$1,299.00</strong>
-                        <a href="#" aria-label="Agregar">+</a>
+                        <a href="#" class="add-to-cart" aria-label="Agregar" data-product="Rompevientos Stealth Track">+</a>
                     </div>
                 </div>
             </article>
 
             <article class="nuevo-prod-1">
                 <span class="new-badge">Nuevo</span>
-                <div class="placeholder-nuevo-producto">[ Nuevo Producto ]</div>
+                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=500&q=80" alt="Maleta" style="width:100%; height:250px; object-fit:cover; border-radius: 8px 8px 0 0;">
                 <div class="info">
                     <h3>Maleta Gear Storm 45L</h3>
                     <div class="meta">
                         <strong>$899.00</strong>
-                        <a href="#" aria-label="Agregar">+</a>
+                        <a href="#" class="add-to-cart" aria-label="Agregar" data-product="Maleta Gear Storm 45L">+</a>
                     </div>
                 </div>
             </article>
 
             <article class="nuevo-prod-2">
                 <span class="new-badge">Nuevo</span>
-                <div class="placeholder-nuevo-producto">[ Nuevo Producto ]</div>
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80" alt="Tenis" style="width:100%; height:250px; object-fit:cover; border-radius: 8px 8px 0 0;">
                 <div class="info">
                     <h3>Tenis Apex Beast V1</h3>
                     <div class="meta">
                         <strong>$1,899.00</strong>
-                        <a href="#" aria-label="Agregar">+</a>
+                        <a href="#" class="add-to-cart" aria-label="Agregar" data-product="Tenis Apex Beast V1">+</a>
                     </div>
                 </div>
             </article>
@@ -291,7 +294,7 @@
     </section>
 
     <!-- TESTIMONIOS -->
-    <section class="testimonios-section">
+    <section class="testimonios-section reveal">
         <div class="testimonios-header">
             <span>Comunidad sport</span>
             <h2>La manada opina</h2>
@@ -337,7 +340,7 @@
     </section>
 
     <!-- CARACTERÍSTICAS DE MARCA -->
-    <section class="caracteristicas-marca">
+    <section class="caracteristicas-marca reveal">
         <article class="feature-0">
             <div class="feat-icon-wrapper">✦</div>
             <div class="feat-text">
@@ -372,14 +375,14 @@
     </section>
 
     <!-- NEWSLETTER -->
-    <section class="newsletter-section">
+    <section class="newsletter-section reveal">
         <div class="newsletter-header">
             <span>Comunidad</span>
             <h2>Únete a la manada</h2>
             <p>Recibe ofertas exclusivas, nuevos productos y contenido directo en tu correo.</p>
         </div>
 
-        <form class="input-container">
+        <form class="input-container" id="newsletter-form">
             <div class="email-input-wrapper">
                 <label for="email">Correo electrónico</label>
                 <input id="email" type="email" placeholder="Tu correo electrónico..." required>
@@ -391,12 +394,12 @@
 </main>
 
 <!-- FOOTER -->
-<footer class="footer">
+<footer class="footer reveal">
     <div class="footer-cols">
 
         <div class="footer-brand">
             <div class="logo-container-footer">
-                <div class="logo-cropped-footer" aria-hidden="true"></div>
+                <img src="./img/logo.png" width="40" height="40" alt="Logo">
                 <div class="logo-text-group-footer">
                     <span>CUIDADO CON EL GATO</span>
                     <small>SPORT BRAND</small>
@@ -450,5 +453,7 @@
     </div>
 </footer>
 
+<div id="toastPlacement" class="toast-container-vanilla"></div>
+<script type="module" src="./js/main.js"></script>
 </body>
 </html>
