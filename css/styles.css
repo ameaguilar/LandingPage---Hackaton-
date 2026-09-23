@@ -1,8 +1,6 @@
-/* =========================================================
+/* 
    CUIDADO CON EL GATO
-   styles.css
-   Basado en el wireframe proporcionado
-   ========================================================= */
+   styles.css */
 
 * {
     box-sizing: border-box;
@@ -46,9 +44,7 @@ button {
     cursor: pointer;
 }
 
-/* =========================================================
-   NAVIGATION BAR
-   ========================================================= */
+/* NAVIGATION BAR*/
 
 .navigation-bar {
     width: 100%;
@@ -154,9 +150,7 @@ button {
     text-transform: uppercase;
 }
 
-/* =========================================================
-   HERO
-   ========================================================= */
+/*HERO */
 
 .hero-section {
     min-height: 660px;
@@ -245,13 +239,11 @@ button {
     /* Recorta y ajusta la imagen para que llene el contenedor sin deformarse */
     border: 1px solid var(--green);
     border-radius: 8px;
-    /* Borde suave similar al resto del diseño */
+    /* Borde suave*/
     display: block;
 }
 
-/* =========================================================
-   CATEGORÍAS
-   ========================================================= */
+/*CATEGORÍAS*/
 
 .categorias-destacadas,
 .novedades-section {
@@ -340,9 +332,8 @@ button {
     font-size: 22px;
 }
 
-/* =========================================================
-   COLECCIONES
-   ========================================================= */
+/* COLECCIONES
+ */
 
 .coleccion-hombre,
 .coleccion-mujer {
@@ -469,9 +460,9 @@ button {
     color: var(--white);
 }
 
-/* =========================================================
+/* 
    BANNER PROMOCIONAL
-   ========================================================= */
+*/
 
 .banner-promocional {
     padding: 80px;
@@ -548,9 +539,7 @@ button {
     display: block;
 }
 
-/* =========================================================
-   NOVEDADES
-   ========================================================= */
+/* NOVEDADES*/
 
 .carousel-indicator {
     display: flex;
@@ -630,9 +619,7 @@ button {
     color: var(--green);
 }
 
-/* =========================================================
-   TESTIMONIOS
-   ========================================================= */
+/*  TESTIMONIOS */
 
 .testimonios-section {
     padding: 90px 80px;
@@ -711,9 +698,8 @@ button {
     color: var(--muted);
 }
 
-/* =========================================================
-   CARACTERÍSTICAS
-   ========================================================= */
+/* CARACTERÍSTICAS
+ */
 
 .caracteristicas-marca {
     padding: 48px 80px;
@@ -747,9 +733,7 @@ button {
     font-size: 13px;
 }
 
-/* =========================================================
-   NEWSLETTER
-   ========================================================= */
+/* NEWSLETTER */
 
 .newsletter-section {
     padding: 72px 80px;
@@ -813,9 +797,8 @@ button {
     text-transform: uppercase;
 }
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
+/* FOOTER
+ */
 
 .footer {
     padding: 64px 80px 24px;
@@ -906,9 +889,7 @@ button {
     color: var(--white);
 }
 
-/* =========================================================
-   HOVER
-   ========================================================= */
+/* HOVER */
 
 a,
 button {
@@ -927,9 +908,8 @@ a:hover {
     opacity: 1;
 }
 
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
+/*RESPONSIVE
+ */
 
 @media (max-width: 1100px) {
 
